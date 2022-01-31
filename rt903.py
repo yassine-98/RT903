@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 def hello() :
 
-    # return render_template("index.html")
-    return jsonify("Yassine")
+    
+    return jsonify("Hello World!")
 
     
 if __name__ == "__main__":
