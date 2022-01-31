@@ -5,6 +5,7 @@ from tkinter import image_names
 from flask import Flask , render_template
 import random
 import datetime
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -12,7 +13,8 @@ app = Flask(__name__)
 
 def hello() :
 
-    return render_template("index.html")
+    # return render_template("index.html")
+    return jsonify("Yassine")
 
     
 if __name__ == "__main__":
