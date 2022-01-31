@@ -14,7 +14,7 @@ app = Flask(__name__)
 def hello() :
 
     
-    return jsonify("Hello World!")
+    return jsonify("MESSAGE="Hello World!"")
 
     
 if __name__ == "__main__":
