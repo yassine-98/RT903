@@ -1,7 +1,8 @@
 # ourbase image
 FROM alpine:latest
+
 ## ENV
-ENV Port 80
+ENV Port 8080
 ENV message "Hello Wolrd !"
 
 # Install python and pip
@@ -17,7 +18,7 @@ RUN pip install --no-cache-dir Flask
 COPY rt903.py /usr/src/app/
 
 #COPY templates/index.html /usr/src/app/templates/
-# tell the port numberthe container should
+# tell the port number the container should
 EXPOSE 80
 
 # run the application
